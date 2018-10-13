@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundss"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context="com.best.toukir.currencycinverter.nternationalCurrencyActivity">
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="International Currencies and Currency Codes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="8"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/rounded_rect_shape"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Country Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/rounded_rect_shape"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Country Currency Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/rounded_rect_shape"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listOfCurrencies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

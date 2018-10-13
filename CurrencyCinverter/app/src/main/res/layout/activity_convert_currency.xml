@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".ConvertCurrencyActivity" android:background="@drawable/backgroundss">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="55dp"
+            android:text="Currency"
+            android:id="@+id/txtApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:text="Converter"
+            android:id="@+id/txtApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/etgetAmount"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Enter amount"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/txtFrom"
+            android:padding="12dp"
+            android:text="From"
+            android:textSize="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:background="@drawable/rounded_rect_shape"
+            android:layout_width="200dp"
+            android:layout_height="60dp">
+        </Spinner>
+
+
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/txtTo"
+            android:padding="8dp"
+            android:text="To"
+            android:textSize="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:background="@drawable/rounded_rect_shape"
+            android:layout_width="200dp"
+            android:layout_height="60dp">
+        </Spinner>
+
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:onClick="btnConvert"
+            android:text="Convert"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
